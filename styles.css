@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* 
+Open Font License: OFL.txt located in project folder
+*/
+/* Reset */ 
+html, body, div, span, 
+h1, h2, h3, h4, h5, h6, p, blockquote, 
+a, address, cite, 
+del, dfn, em, img, 
+strong, b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, 
+article, aside, embed, 
+figure, figcaption, footer, header,  
+menu, nav, output, section, summary,
+time {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* html + body */
+html { 
+     
+    color: rgb(236, 236, 236);
+    background-image: url(R6S_operators.png);
+    
+    
+}
+@font-face { 
+    font-family: Anton;
+    src: url('Anton-Regular.ttf') format('trutype');
+}
+h1 { 
+    letter-spacing: 0.5px;
+    background-color: rgba(0, 0, 0, 0.521);
+    font-size: 2em;
+    font-weight: bold;
+}
+h2 {
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+header h1 {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.521)
+}
+.explain {
+    background-color: rgba(0, 0, 0, 0.521);
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+
+/* articles */
+article {
+    font-family: Anton, sans-serif;
+    background-color: rgba(0, 0, 0, 0.521)
+}
+
+article section#table { 
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    background-color: rgba(0, 0, 0, 0.521)
+}
+/* aside + blockquote */
+aside {
+    font-family: Anton, sans-serif;
+    background-color: rgba(0, 0, 0, 0.521)
+}
+
+/* navigation */
+ul#list li {    
+    display: inline;
+    text-align: center;
+    
+}
+nav {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.521)
+}
+nav a {
+    font-family: Anton, sans-serif;
+}
+nav>ul>li>a:link, nav>ul>li>a:visited { 
+    color: white;
+    text-decoration: none;  
+    
+}
+nav>ul>li>a:hover, nav>ul>li>a:active {
+    color: ivory;
+    background-color: rgb(160, 160, 160);
+}
+/* sections */
+
+/* table */ /* M6LO7 */
+table#ops {
+    border: 2px solid gray;
+    background-color: rgba(29, 5, 165, 0.479);
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    font-family: Anton, sans-serif;
+}
+
+col#loadout {
+    column-span: 4;
+}
+
+table tr, th, td {
+    border: 2px solid gray;
+}
+
+tr {
+    font-size: 17pt;
+}
+th {
+    font-size: 24pt;
+}
+
+/* footer */
+
+/* Mobile Styles */ /* M5LO3*/
+@media only screen and (max-width: 480px) {
+    table {
+        font-size: 12pt;
+        width: 100%;
+    }
+}
